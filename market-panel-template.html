@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Panel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto+Mono:wght@400&display=swap');
+        body {
+            background-color: transparent; margin: 0; padding: 0; overflow: hidden;
+            display: flex; justify-content: center; align-items: center; height: 100vh;
+        }
+        .market-deck {
+            display: flex; flex-direction: column; width: 100%; max-width: 1200px;
+            padding: 25px 20px; background-color: rgba(10, 10, 10, 0.5); /* Fondo semitransparente Obsidiana */
+            border: 1px solid #282828; border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+        .deck-title {
+            font-family: 'Lora', serif; font-size: 1.2em; letter-spacing: 3px;
+            text-transform: uppercase; color: #AA8A5A; /* Oro Cepillado */
+            text-align: center; margin-bottom: 25px; padding-bottom: 15px;
+            border-bottom: 1px solid #282828;
+        }
+        .widgets-container {
+            display: flex; flex-wrap: wrap; /* Permitir que los widgets se envuelvan a la siguiente línea */
+            justify-content: center; /* Centrar los widgets si hay pocos */
+            gap: 20px; /* Espacio entre widgets */
+        }
+        .widget-module {
+            flex: 1 1 calc(33% - 20px); /* Para 3 widgets por fila, ajusta si necesitas más o menos */
+            min-width: 250px; /* Ancho mínimo para que no se hagan demasiado pequeños */
+            height: 350px; /* Altura fija para los charts */
+        }
+
+        /* --- Estilos para paneles secundarios (opcional, para diferenciar) --- */
+        .secondary-title {
+            color: #E5E4E2; /* Platino, más sutil que el oro */
+            font-size: 1em;
+            letter-spacing: 2px;
+            opacity: 0.7;
+        }
+        .secondary-panel {
+            background-color: rgba(15, 15, 15, 0.4); /* Fondo ligeramente más oscuro o menos denso */
+            border: 1px solid #1a1a1a;
+            box-shadow: none; /* Sin sombra para un look más discreto */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="market-deck">
+        <div class="deck-title">Panel de Ejemplo</div>
+        <div class="widgets-container">
+            <!-- AQUÍ VAN TUS WIDGETS DE TRADINGVIEW -->
+            <!-- Cada widget debe estar envuelto en un <div class="widget-module">...</div> -->
+        </div>
+    </div>
+</body>
+</html>
